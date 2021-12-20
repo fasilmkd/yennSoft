@@ -30,13 +30,21 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+  
+
+
 </head>
 
 <body>
 
   <div class="hero_area">
     <div class="bg-box">
-      <img src="images/hero-bg.jpg" alt="">
+      <img src="images/website-development.png" alt="website-development">
     </div>
     <!-- header section strats -->
     <header class="header_section">
@@ -170,10 +178,10 @@
                 <div class="col-md-7 col-lg-6 ">
                   <div class="detail-box">
                     <h1>
-                      Website And Web Applications
+                      Mobile Applications
                     </h1>
                     <p>
-                      Website And Web Applications could have been crucial things in theses days to business,other online service Will make your identity reachable to anyone easily   
+                      We provide custom Mobile Applications which is more friendly UI easy to use facilities analysis your Business , Workflow , Tracking System and accessible from anywhere by using our cloud services .we have been very kind that we could satisfy our client need more over consulting them to improve their business by analysis   
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">
@@ -230,7 +238,7 @@
           <div class="col-md-6  ">
             <div class="box ">
               <div class="img-box">
-                <img src="images/o1.jpg" alt="">
+                <img src="images/application-development-discount.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -384,10 +392,10 @@
 
       <ul class="filters_menu">
         <li class="active" data-filter="*">All</li>
-        <li data-filter=".burger">Burger</li>
-        <li data-filter=".pizza">Pizza</li>
-        <li data-filter=".pasta">Pasta</li>
-        <li data-filter=".fries">Fries</li>
+        <li data-filter=".burger">Ecommerce Applications</li>
+        <li data-filter=".pizza">Website</li>
+        <li data-filter=".pasta">Wobile Applications</li>
+        <li data-filter=".fries">Desktop Applications</li>
       </ul>
 
       <div class="filters-content">
@@ -1096,7 +1104,7 @@
       <div class="row">
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="images/about-img.png" alt="">
+            <img src="images/about-yennsoft.png" alt="about-yennsoft">
           </div>
         </div>
         <div class="col-md-6">
@@ -1186,55 +1194,41 @@
 
   <!-- client section -->
 
-  <section class="client_section layout_padding-bottom">
-    <div class="container">
-      <div class="heading_container heading_center psudo_white_primary mb_45">
-        <h2>
-          What Says Our Customers
-        </h2>
-      </div>
-      <div class="carousel-wrap row ">
-        <div class="owl-carousel client_owl-carousel">
-          <div class="item">
-            <div class="box">
-              <div class="detail-box">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-                <h6>
-                  Moana Michell
-                </h6>
-                <p>
-                  magna aliqua
-                </p>
-              </div>
-              <div class="img-box">
-                <img src="images/client1.jpg" alt="" class="box-img">
-              </div>
+  <div class="brands">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="brands_slider_container">
+                    <div class="owl-carousel owl-theme brands_slider">
+                        <div class="owl-item">
+                            <div class="brands_item d-flex flex-column justify-content-center"><img src="images/java.png" alt="java"></div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="brands_item d-flex flex-column justify-content-center"><img src="images/php.png" alt="php"></div>
+                        </div>
+                        
+                        
+                        <div class="owl-item">
+                            <div class="brands_item d-flex flex-column justify-content-center"><img src="images/mysql.png" alt="mysql"></div>
+                        </div>
+
+                        <div class="owl-item">
+                          <div class="brands_item d-flex flex-column justify-content-center"><img src="images/swift-ios.png" alt="swift-ios"></div>
+                        </div>
+
+
+                        
+                        
+                        
+                        
+                    </div> <!-- Brands Slider Navigation -->
+                    <div class="brands_nav brands_prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="brands_nav brands_next"><i class="fas fa-chevron-right"></i></div>
+                </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="detail-box">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-                <h6>
-                  Mike Hamell
-                </h6>
-                <p>
-                  magna aliqua
-                </p>
-              </div>
-              <div class="img-box">
-                <img src="images/client2.jpg" alt="" class="box-img">
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </section>
+</div>
 
   <!-- end client section -->
 
@@ -1342,5 +1336,53 @@
   <!-- End Google Map -->
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+
+<script>
+  
+
+$(document).ready(function(){
+
+if($('.brands_slider').length)
+{
+var brandsSlider = $('.brands_slider');
+
+brandsSlider.owlCarousel(
+{
+loop:true,
+autoplay:true,
+autoplayTimeout:5000,
+nav:false,
+dots:false,
+autoWidth:true,
+items:8,
+margin:42
+});
+
+if($('.brands_prev').length)
+{
+var prev = $('.brands_prev');
+prev.on('click', function()
+{
+brandsSlider.trigger('prev.owl.carousel');
+});
+}
+
+if($('.brands_next').length)
+{
+var next = $('.brands_next');
+next.on('click', function()
+{
+brandsSlider.trigger('next.owl.carousel');
+});
+}
+}
+
+
+});
+
+</script>
 
 </html>
